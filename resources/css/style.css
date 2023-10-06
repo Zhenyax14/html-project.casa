@@ -80,7 +80,7 @@
 
 body{
     
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
     background-color:rgb(66, 66, 66);
     
@@ -95,7 +95,6 @@ body{
 
 .content{
     width: 800px;
-    height: 800px;
     border: 10px solid white;
     margin: 0 auto;
     background-color: white;
