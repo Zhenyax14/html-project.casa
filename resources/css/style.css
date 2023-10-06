@@ -1,0 +1,364 @@
+/* Estilos de body*/
+
+.all{
+ 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}   
+
+/* Video background*/
+.video_background::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.video_background{
+    max-height: 100;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    
+}
+
+
+
+.video_media{
+    background: url('../img/1.jfif') center/cover no-repeat;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    pointer-events: none;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 100%;
+    z-index: 1;
+   
+    
+}
+
+.video_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 3;
+    
+    
+
+}
+
+.video_title{
+    margin: 0;
+    align-items: center;
+    font-size: 45px;
+    color: rgb(202, 202, 195);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0px;
+}
+
+
+/* Fin de video*/
+
+
+body{
+    
+    overflow: hidden;
+    position: relative;
+    background-color:rgb(66, 66, 66);
+    
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+
+}
+
+
+
+.content{
+    width: 800px;
+    height: 800px;
+    border: 10px solid white;
+    margin: 0 auto;
+    background-color: white;
+
+   
+  
+    
+    z-index: 3;
+}
+
+/*encabezado*/
+
+.container-header{
+    display: flex;
+    height: 150px;
+    
+}
+
+.user-pic{
+    display: flex;
+    height: 100%;
+    
+
+
+}
+
+.avatar{
+    
+    margin-left: 10px;
+    
+}
+
+.header-principal{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background: url('../img/1.jfif');
+    
+
+}
+
+/*fin de encabezado*/
+
+
+/*navbar*/
+
+.logo{
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.nav-1 ul{
+    display: flex;
+   
+
+    
+}
+
+.nav-1 li{
+    display: flex;
+    
+}
+
+.nav-1 li a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-right: 1px solid rgb(114, 112, 112);
+    padding: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background 1s ease;
+    
+}
+
+.nav-1 li a:hover{
+    background-color: rgb(229, 241, 60);
+    color: rgb(70, 68, 68);
+}
+
+
+
+.nav{
+    background-color: rgb(66, 66, 66);
+    height: 64px;
+}
+
+/*fin de navbar*/
+
+/*contenido*/
+
+.content-wrapper{
+    display: flex;
+}
+
+.content-1{
+    width: 70%;
+    padding: 20px;
+    
+}
+
+/*Barra derecha de Habilidades*/
+.sidebar{
+    width: 30%;
+    padding: 20px;
+    
+}
+.skills li{
+    margin: 5px;
+    transition: transform .5s ease;
+    
+
+}
+
+.skills li:hover{
+    transition: translateX(10px);
+
+    
+
+}
+/*fin de barra*/
+
+
+/*fin de contenido*/
+
+
+
+/* Estilos de body de hobby.html (segunda pagina)*/
+
+
+legend{
+    text-decoration: solid;
+    align-items: center;
+}
+
+/* Estilos de body de form.html (tercera pagina)*/
+
+.form-1{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* Boton de pagina principal*/
+    /*general*/
+
+    .button-1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+        text-align: center;
+    }
+    
+    .button-2{
+        align-items: center;
+        position: relative;
+        display: inline-block;
+        padding:15px 30px ;
+        margin-top: 20px ;
+        color: rgb(78, 78, 76);
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 24px;
+        letter-spacing: 4px;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+
+    .button__line{
+        position: absolute;
+        display: block;
+
+    }
+
+    .button-2:hover {
+        box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3;
+        background-color: #2196f3;
+        color: black;
+        transition-delay: 0.55s ;
+    }
+
+
+    
+    /*linea arriba*/
+        .button__line--top{
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+        
+            background: linear-gradient(90deg,transparent,#2196f3 );
+        }
+
+        .button-2:hover .button__line--top{
+        left: 100%;
+        transition: 1s;
+        transition-delay: 0.25s ;
+        }
+
+
+
+
+    /* linea abajo */
+        .button__line--bottom{
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+        
+            background: linear-gradient(270deg,transparent,#2196f3 );
+        }
+
+        .button-2:hover .button__line--bottom{
+            right: 100%;
+            transition: 1s;
+            transition-delay: 0.25s ;
+            }
+
+
+     /* linea izquerda */
+        .button__line--left{
+            bottom:-100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+        
+            background: linear-gradient(0deg,transparent,#2196f3 );
+        }
+
+        .button-2:hover .button__line--left{
+            bottom: 100%;
+            transition: 1s;
+            transition-delay: 0.25s ;
+            }
+
+
+
+        /*linea derecha*/
+        .button__line--right{
+            top:-100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+        
+            background: linear-gradient(180deg,transparent,#2196f3 );
+        }
+
+        .button-2:hover .button__line--right{
+            top: 100%;
+            transition: 1s;
+            transition-delay: 0.25s ;
+            }
+
+
+/* Fin de boton de pagina principal
+*/
+       
+    
