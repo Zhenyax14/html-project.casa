@@ -190,6 +190,7 @@ body{
 
 .content-title{
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .content-wrapper{
@@ -200,17 +201,43 @@ body{
     width: 70%;
     padding: 20px;
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     
 }
 
 .content-2{
-    margin-top: 100px;
+    margin-top: 70px;
     width: 100%;
     padding: 20px;
     border: 2px solid;
+    background-color: rgb(229, 241, 60);
+    color: rgb(70, 69, 69);
+    height: 400px;
     
 }
+
+.content-3{
+    margin-top: 70px;
+    width: 70%;
+    padding: 20px;
+   
+    
+    
+}
+.footer-wrapper{
+    margin-top: 70px;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+.footer-copyright{
+    text-align: center;
+    font-size: small;
+}
+
 /*Barra derecha de Habilidades*/
 .sidebar{
     width: 30%;
