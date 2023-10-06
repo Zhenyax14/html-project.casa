@@ -23,8 +23,6 @@
     position: relative;
 }
 
-
-
 .video {
     position: relative;
     padding-bottom: 56.25%;
@@ -34,7 +32,6 @@
 
 
 .video_media{
-    background: url('../img/1.jfif') center/cover no-repeat;
     width: 100%;
     height: auto;
     position: absolute;
@@ -95,6 +92,7 @@ body{
 
 .content{
     width: 800px;
+
     border: 10px solid white;
     margin: 0 auto;
     background-color: white;
@@ -177,16 +175,22 @@ body{
     color: rgb(70, 68, 68);
 }
 
-
-
 .nav{
     background-color: rgb(66, 66, 66);
     height: 64px;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+   
 }
 
 /*fin de navbar*/
 
 /*contenido*/
+
+.content-title{
+    text-align: center;
+}
 
 .content-wrapper{
     display: flex;
@@ -195,14 +199,23 @@ body{
 .content-1{
     width: 70%;
     padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
     
 }
 
+.content-2{
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid;
+    
+}
 /*Barra derecha de Habilidades*/
 .sidebar{
     width: 30%;
     padding: 20px;
-    
+   margin-top: 20px; 
 }
 .skills li{
     margin: 5px;
@@ -223,22 +236,6 @@ body{
 /*fin de contenido*/
 
 
-
-/* Estilos de body de hobby.html (segunda pagina)*/
-
-
-legend{
-    text-decoration: solid;
-    align-items: center;
-}
-
-/* Estilos de body de form.html (tercera pagina)*/
-
-.form-1{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-}
 
 
 
@@ -269,6 +266,7 @@ legend{
         letter-spacing: 4px;
         overflow: hidden;
         transition: 0.2s;
+        background-color:  rgb(229, 241, 60);
     }
 
     .button__line{
@@ -279,33 +277,33 @@ legend{
 
     .button-2:hover {
         box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3;
-        background-color: #2196f3;
+        background-color:  rgb(229, 241, 60);
         color: black;
-        transition-delay: 0.55s ;
+        
     }
 
-
-    
-    /*linea arriba*/
-        .button__line--top{
+/* .button__line--top{
             top: 0;
             left: -100%;
             width: 100%;
             height: 2px;
         
             background: linear-gradient(90deg,transparent,#2196f3 );
-        }
-
         .button-2:hover .button__line--top{
         left: 100%;
         transition: 1s;
         transition-delay: 0.25s ;
-        }
+        } }*/
+    
+    /*linea arriba
+       
+
+       
 
 
 
 
-    /* linea abajo */
+ 
         .button__line--bottom{
             bottom: 0;
             right: -100%;
@@ -322,7 +320,7 @@ legend{
             }
 
 
-     /* linea izquerda */
+ 
         .button__line--left{
             bottom:-100%;
             left: 0;
@@ -340,7 +338,7 @@ legend{
 
 
 
-        /*linea derecha*/
+      
         .button__line--right{
             top:-100%;
             right: 0;
@@ -356,7 +354,7 @@ legend{
             transition-delay: 0.25s ;
             }
 
-
+*/
 /* Fin de boton de pagina principal
 */
        
