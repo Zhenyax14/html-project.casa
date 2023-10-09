@@ -142,20 +142,34 @@ body{
 
 /*navbar*/
 
-.logo{
-    padding: 20px;
-    margin-right: 10px;
-}
+
+
+.navbar-logo{
+    
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 25px;
+    width: 15%;
+    
+  }
+
+  .navbar-logo img{
+    display: flex;
+    width: 100px;
+    height: auto;
+    
+
+    
+  }
 
 .nav-1 ul{
     display: flex;
-   
-
-    
+    height: 100%; /*necesario para que navbar sale a 100% de la altura total*/
 }
 
 .nav-1 li{
     display: flex;
+    
     
 }
 
@@ -167,20 +181,30 @@ body{
     padding: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition: background 1s ease;
+    padding-top: 40px;
+    
+    
+    
     
 }
 
 .nav-1 li a:hover{
     background-color: rgb(229, 241, 60);
     color: rgb(70, 68, 68);
+    
 }
 
-.nav{
-    background-color: rgb(66, 66, 66);
-    height: 64px;
+
+.nav-1{
+    background-color: #424242;
+    height: 100px;
     position: fixed;
     z-index: 4;
     width: 100%;
+    display: flex;
+    
+  
+   
    
 }
 
