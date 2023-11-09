@@ -9,31 +9,41 @@
 </head>
 <body>
   <main>
-    <div class="circle"> </div>
-    <div class="register-form-container">
-        <h1 class="form-title"> Registrarse</h1> 
-        <div class="form-fields">
-            <div class="form-field">
-                <input type="text" placeholder="Nombre">
+    <form action="../../index.html" method="post">
+        <div class="circle"> </div>
+        <div class="register-form-container">
+            <h1 class="form-title"> Registrarse</h1> 
+            <div class="form-fields">
+                <div class="name">
+                    <input required type="text" placeholder="Nombre" pattern="[A-Z]|[a-z]{1,10}">
+                </div>
+                <div class="e-mail">
+                    <input required type="email" placeholder="e-mail@example.com" id="e-mail">
+                </div>
+                <div class="password">
+                    <input required type="password" placeholder="Contraseña" pattern="(?=*\d=)(?=.*[A-Z]).{6,}">
+                </div>
+                <div class="repeat-password">
+                    <input required type="password" placeholder="Confirmar Contraseña">
+                </div>
+<!---Como recuerdo, php laravel tiene la posibilidad de validación de la contraseña,
+basando en el campo de la contrasela principal
+Es otras palabras, el primer campo se valida por parte cliente, 
+el segundo - valida que coinciden los campos sin más ---->
+                <div class="sex-selection">
+                    <input type="radio" id="sex-M" name="sex-M" value="Hombre" />
+                    <label for="sex-M">Hombre</label>
+                    <input type="radio" id="sex-F" name="sex-F" value="Mujer"/>
+                    <label for="sex-F">Mujer</label>
+                </div>
             </div>
-            <div class="form-field">
-                <input type="text" placeholder="e-mail">
+            <div class="form_butons">
+                <button class="button"> Registrarme</button>
+                <div class="divider"> o entrar con</div>
+                <a href="#" class="button button-google"> Google</a>
             </div>
-            <div class="form-field">
-                <input type="text" placeholder="Contraseña">
-            </div>
-            <div class="form-field">
-                <input type="text" placeholder="Confirmar Contraseña">
-            </div>
-
         </div>
-        <div class="form_butons">
-            <button class="button"> Registrarme</button>
-            <div class="divider"> o entrar con</div>
-            <a href="#" class="button button-google"> Google</a>
-        </div>
-    </div>
-    
+    </form>
     </main>
 </body>
 </html>
