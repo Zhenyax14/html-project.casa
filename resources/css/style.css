@@ -223,6 +223,10 @@ body{
     display: flex;
 }
 
+.nav-sesion li a{
+   border-right: 0px solid rgb(114, 112, 112);;
+}
+
 /*fin de navbar*/
 
 /*contenido*/
