@@ -85,8 +85,7 @@
 body{
     
     overflow: scroll;
-    position: relative;
-    background-color:rgb(66, 66, 66);
+    position: relative; 
     margin: 0;
     padding: 0;
     font-size: 100%;
@@ -179,6 +178,8 @@ body{
     display: flex;
     height: 100%; /*necesario para que navbar sale a 100% de la altura total*/
     max-width: 100px;
+    margin-top: 0px;
+    
     
   
 }
@@ -206,6 +207,7 @@ body{
     
     
     
+    
 }
 
 .nav li a:hover{
@@ -225,6 +227,11 @@ body{
 
 .nav-sesion li a{
    border-right: 0px solid rgb(114, 112, 112);;
+}
+
+.nav-sesion li a:hover{
+    color: rgb(229, 241, 60);
+    background-color: #424242;;
 }
 
 /*fin de navbar*/
@@ -275,46 +282,7 @@ body{
 
 
 
-/*Comienzo del footer*/
 
-.footer-social-media{
-    width: 40%;
-    min-width: 40%;
-    
-}
-
-.footer-social-media h5{
-    text-align: left;
-}
-
-.footer-social-media ul{
-    list-style: none;
-    margin-top: 15px;
-    text-decoration: none;
-    
-}
-.footer-social-media a{
-    color: aliceblue;
-    margin-left: 10px;
-}
-
-.footer-social-media img{
-    width: 35px;
-    margin: 10px;
-    
-    
-}
-
-.footer-wrapper{
-   display: flex;
-    width: 100%;
-   
-}
-
-.footer-copyright{
-    text-align: center;
-    font-size: small;
-}
 
 
 .content-3-content{
@@ -343,14 +311,6 @@ body{
 /*fin de barra*/
 
 
-/*fin de contenido*/
-
-
-
-
-
-
-
 
 /* Boton de pagina principal*/
     /*general*/
@@ -369,20 +329,20 @@ body{
         padding:15px 30px ;
         margin-top: 20px ;
         margin-bottom: 100px;
-        color: rgb(78, 78, 76);
+        color: rgb(218, 218, 215);
         text-transform: uppercase;
         text-decoration: none;
         font-size: 24px;
         letter-spacing: 4px;
         overflow: hidden;
         transition: 0.2s;
-        background-color:  rgb(229, 241, 60);
+        background-color:  rgb(121, 121, 120);
         
     }
 
     .header-button input:hover{
         box-shadow: 0 0 10px #616263, 0 0 40px #979797;
-        background-color:  rgb(229, 241, 60);
+        background-color:  rgb(148, 148, 147);
         color: black;
     }
 
@@ -425,6 +385,51 @@ body{
 
 
       /* footer */
+    /*Comienzo del footer*/
+
+
+.footer-social-media{
+    width: 30%;
+    min-width: 40%;
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.footer-social-media a{
+    color:white;
+    text-decoration: none;
+    
+    
+}
+
+
+.footer-social-media h5{
+    text-align: left;
+}
+
+.footer-social-media ul{
+    list-style: none;
+    margin-top: 15px;
+    text-decoration: none;
+    
+    
+}
+
+
+.footer-social-media img{
+    width: 35px;
+    margin: 10px;
+}
+
+
+
+.footer-wrapper{
+   display: flex;
+    width: 100%;
+   
+}
+
 
       footer{
         position: relative;
@@ -447,16 +452,224 @@ body{
        text-align: center;
        font-size: small;
        background-color:#424242;
+       text-align: center;
+        font-size: small;
        
     }
 
-    .footer-social-media{
-        padding: 20px;
-    }
+
 
     .footer-social-media a:hover{
         text-decoration: none;
         color: rgb(229, 241, 60);
     }
  
+
+/*blog*/
+/*
+.blog-wrapper{
+    display: flex;
+}
+*/
+.blog-container{
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: 100;
+    margin: 48px auto;
+    width: 50rem;   
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 2) 0px 6px 16px;
+
+}
+
+.blog-container a:hover{
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+}
+
+.blog-thumbnail{
+    background: url("../img/paper.jpeg");
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 15rem;
+    box-shadow: inset rgba(0, 0, 0, 2) 0 5px 64px 16px;
+}
+.blog-nav-title{
+    text-transform: uppercase;
+    padding-left: 30px;
+    font-weight:800;
+}
+
+.blog-title h1 a{
+    color: #424242;
+    text-decoration: none;
+
+}
+
+.blog-text p{
+    color:#616263;
+}
+
+.blog-tags ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.blog-tags li + li{
+    margin-left: 0.5rem;
+}
+
+.blog-tags a{
+    border: 1px solid rgb(92, 92, 91);
+    border-radius: 3px;
+    color: rgb(90, 90, 89);
+    font-size: .75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    padding: 0 .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 5rem;
+}
+
+.blog-footer{
+    border-top: 1px solid #E5e6e6;
+    margin: 0 auto;
+    padding-bottom: .125rem;
+    width: 80%;
+}
+
+.blog-footer ul{
+    list-style: none;
+    display: flex;
+    flex: row wrap;
+    justify-content: flex-end;
+    padding-left: 0;
+}
+
+.blog-footer li{
+    color: #999999;
+    font-size: .75rem;
+    height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    white-space: nowrap;
+}
+
+.blog-published-date{
+    border: 1px solid #999999;
+    border-radius: 3px;
+    padding: 0 .5rem;
+}
+
+.blog-nav ul{
+    display: flex;
+    height: 100%; /*necesario para que navbar sale a 100% de la altura total*/
+    max-width: 100px;
+    margin-top: 0px;
+    padding: 0 0 0 0;
+
+  
+  
+}
+
+.blog-nav li{
+    display: flex;
+    
+    
+}
+
+.blog-nav li a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(65, 62, 62);
+    border-right: 1px solid rgb(114, 112, 112);
+    padding: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background 1s ease;
+    padding-top: 40px;
+    width: 130px;
+    
+    
+    
+    
+    
+}
+
+.blog-nav li a:hover{
+    background-color: rgb(233, 233, 230);
+    color: rgb(70, 68, 68);
+    
+}
+
+
+.blog-nav{
+    
+    background-color: #ffffff;
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/*Pagina sobre nosotros*/
+
+.about-wrapper{
+    margin: 0% 15% 0% 15%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    font-family: sans-serif;
+    padding: 20px;
+    
+    align-items: center;
+}
+
+.about-firstBlock{
+    margin-bottom: 10%;
+}
+.about-secondBlock h3{
+    text-align: center;
+    
+}
+
+.about-secondBlock p{
+    margin-bottom: 50px;
+    
+}
+.about-header{
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 1px;
+    margin-top: 40px;
+}
+
+.about-signature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-signature img{
+    width: 200px; 
+    border-radius: 50%;   
+}
+
+.about-signature p{
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.about-list p{
+    text-align: center;
+}
+
 

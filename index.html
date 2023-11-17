@@ -27,17 +27,18 @@
                         <a href="#">Catálago</a>
                     </li>
                     <li>
-                        <a href="#">Sobre nosotros</a>
+                        <a href="./resources/html/about.html">Sobre nosotros</a>
                     </li>
                     <li>
-                        <a href="./resources/html/form.html">Cuarta página</a>
+                        <a href="./resources/html/blog.html">Blog</a>
                     </li>
-                  
+                  <!--- buscador interesante, cual posiblemente podría utilizar
                     <div class="header-buscador">
                         <form>
                             <input type="text" name="search" placeholder="Search..">
                         </form>
                     </div>
+                    -->
                     <div class="nav-sesion">
                         <ul>
                             <li>
@@ -57,8 +58,7 @@
  <!--- Fin barra de navegación ---> 
 
 
-    <main>
-            
+    <main>    
         <section class="video_background">
                 <video class="video_media" autoplay muted loop id="myVideo">
                     <source src="./resources/img/landscape.mp4" type="video/mp4">
@@ -70,10 +70,13 @@
                             <h1>
                                 ¿Te apetece una escapada? 
                             </h1>    
+                            <!----
                             <h1>
                                 Eliga la ciudad
                             </h1>
+     el buscador de ciudad, que me parece muy buena idea para a la hora de filtrar los pisos por ciudades, sacando la info de base de datos
                         <input type="search" name="citysearch" placeholder="Benidorm">
+                        ---->
                         <div class="header-button">
                             <input type="submit" value="Ver disponibilidad">
                         </div>
@@ -133,43 +136,44 @@
         </section>
         <section class="content-button">
             <div class="button-1">
-                <a href="./resources/html/hobby.html" class="button-2">
-                    Reservar
+                <a href="./resources/html/blog.html" class="button-2">
+                    Nuestro blog
                 </a>
             </div>
         </section>
             
        
     </main> 
+    <footer>
+        <section class="footer-wrapper">
+            <section class="footer-social-media">
+                <h5>Nuestras redes sociales:</h5>
+                <ul>
+                    <li><img src="./resources/img/icons/gorjeo.png" alt="twitter"><a href="#">Nuestro twitter</a></li>
+                    <li><img src="./resources/img/icons/youtube.png" alt="youtube"><a href="#">Nuestro youtube</a></li>
+                </ul>
+            </section>
+            <section class="footer-social-media">
+                <h5>Trabaja con nosotros</h5>
+                <ul>
+                    <li><img src="./resources/img/icons/whatsapp.png" alt="whatsapp"><a href="#">Nuestro whatsapp</a></li>
+                    
+                </ul>
+            </section>
+            <section class="footer-social-media">
+                <h5>Contactanos</h5>
+                <ul>
+                    <li>@: example@example.com</li>
+                    <li> tlf: +341234567</li>
+                </ul>
+            </section>
+        </section>
+        <section class="footer-copyright">
+            Copyright 2023 | All rights reserved | Evgenii Kanyshev
+        </section>
+    </footer>
 </body>
 <!--- Fin contenido ---> 
 <!--- Footer -->
-<footer>
-    <section class="footer-wrapper">
-        <section class="footer-social-media">
-            <h5>Nuestras redes sociales:</h5>
-            <ul>
-                <li><img src="./resources/img/icons/gorjeo.png" alt="twitter"><a href="#">Nuestro twitter</a></li>
-                <li><img src="./resources/img/icons/youtube.png" alt="youtube"><a href="#">Nuestro youtube</a></li>
-            </ul>
-        </section>
-        <section class="footer-social-media">
-            <h5>Trabaja con nosotros</h5>
-            <ul>
-                <li><img src="./resources/img/icons/whatsapp.png" alt="whatsapp"><a href="#">Nuestro whatsapp</a></li>
-                
-            </ul>
-        </section>
-        <section class="footer-social-media">
-            <h5>Contactanos</h5>
-            <ul>
-                <li>@: example@example.com</li>
-                <li> tlf: +341234567</li>
-            </ul>
-        </section>
-    </section>
-    <section class="footer-copyright">
-        Copyright 2023 | All rights reserved | Evgenii Kanyshev
-    </section>
-</footer>
+
 </html>
