@@ -1,0 +1,69 @@
+/*Pagina sobre nosotros*/
+
+.about-wrapper{
+    margin: 0% 15% 0% 15%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    font-family: sans-serif;
+    padding: 20px;
+    margin-top: 90px;
+    
+    align-items: center;
+}
+
+.about-separator {
+    
+    background:yellow;
+    width: 100%;
+
+    .about-header {
+       padding-top: 50px;
+       
+    }
+
+    .about-secondBlock h3{
+        text-align: center;
+        
+    }
+    
+    .about-secondBlock p{
+        margin-bottom: 50px;
+        
+    }
+    
+    .about-wrapper {
+        background: yellow;
+    }
+}
+
+.about-firstBlock{
+    margin-bottom: 10%;
+}
+
+.about-header{
+    text-transform: capitalize;
+    text-align: center;
+   margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.about-signature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-signature img{
+    width: 200px; 
+    border-radius: 50%;   
+}
+
+.about-signature p{
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.about-list p{
+    text-align: center;
+}

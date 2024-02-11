@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <link rel="stylesheet" href="./formStyle.css">
+</head>
+
+<form action="#">
+    <fieldset>
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" placeholder="Min 5 letras y max 15 letras" pattern="[A-Za-z]{5,15}" required>
+        </div>
+        <div>
+            <label for="surname">Apellido:</label>
+            <input type="text" placeholder="Apellido" pattern="[A-Za-z]{5,15}" required>
+        </div>
+        <div>
+            <label for="email">Correo electronico:</label>
+            <input type="email" placeholder="E-mail"  pattern="[A-za-z0-9]+@[A-Za-z]+(\.es|\.com)" required>
+        </div>
+        <div>
+        <label for="age">Edad:</label>
+        <input type="number" placeholder="Edad" pattern="([1-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0-9]|6[0-9]|7[0-9]|8[0-9]|9[0-9]|1[0-9]|11[0-9])">
+        </div>
+        <div>
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" >
+        </div>
+        <div>
+                <label for="question">¿Te ha gustado?</label>
+                <input type="range" name="satisfaction">
+        </div>
+        <div>
+            <label for="professor">Profe favorito:</label>
+            <input type="text" placeholder="Profe Favorito" pattern="[A-Za-z]{2}">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Restablecer">
+        </div>
+    </fieldset>
+</form>
+</html>

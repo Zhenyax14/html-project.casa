@@ -3,73 +3,88 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/about.css" />
+        <link rel="stylesheet" href="../css/footer__style.css">
+        <link rel="stylesheet" href="../css/fixed.css">
+        <link rel="stylesheet" href="../css/main-menu.css">
         <title>Sobre nosotros</title>
         
     </head>
     <body> 
         <header>
-            <nav class="nav">
-                        <a class="navbar-logo" href="index.html">
-                            <img src="../img/logo/logo.jpg" >
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="../../index.html">HOME </a>
-                            </li>
-                            <li>
-                                <a href="#">Catálago</a>
-                            </li>
-                            <li>
-                                <a href="./about.html">Sobre nosotros</a>
-                            </li>
-                            <li>
-                                <a href="./blog.html">Blog</a>
-                            </li>
-                            <div class="nav-sesion">
-                                <ul>
-                                    <li>
-                                        <a href="../html/form.html">Registrarme</a>
-                                    </li>
-                                    <li>
-                                        <a href="../html/login-form.html">Iniciar sesión</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </ul>
-                </nav>
+            <!--- Barra de navegación --->
+    <!---<div class="container"> </div>--->
+        <div class="fixed">
+            <div class="fixed__wrap">
+                <div class="fixed__hamburger" id="fixed__hamburger" onclick="openMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+ 
+
+                <div class="fixed__logo">
+                    <img src="../img/logo/logo-removebg-preview.png" alt="Logo">
+                    <p>Inmobiliaria
+                    </p>
+                </div>
+                <div class="fixed__frase2">
+                    <p>Gran selección de apartamentos<span>Benidorm Alicante</span></p>
+                </div>
+                <li class="fixed__session">
+                    <a class="fixed__link" href="./login-form.html">Iniciar sesión</a> 
+                    <a class="fixed__link" href="./form.html">Registrarme</a> 
+                </li>
+                <div class="fixed__phone">
+                    <a href="tel:+3412345678">
+                        <img src="../img/icons/fixed__phone.png" alt="icono__telefono">
+                        <span>+3412345678</span>
+                    </a>
+                </div>
+               
+            </div>
+        
+        </div>
+
+<!----menu desplegable-->
+        <div class="main-menu main-menu--active">
+            <ul class="main-menu__list ">
+                <li class="main-menu__list-item">
+                    <button class="main-menu__close" onclick="closeMenu()">X Menu</button>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../../index.html">Página principal</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../html/catalog.html">Catálogo</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./about.html">Contactanos</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="../html/blog.html">Blog</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__phone" href="tel:+34123456">+34123456</a>
+                </li>
+                <li class="main-menu__item main-menu__session">
+                    <a class="main-menu__link" href="../html/login-form.html">Iniciar sesión</a> |
+                    <a class="main-menu__link" href="../html/form.html">Registrarme</a> 
+                </li>
+                
+
+            </ul>
+        </div>
             </header>
             <main>
                 <div class="about-wrapper">
                     <div class="about-firstBlock">
                         <div class="about-header">
-                            <h1>Sobre nosotros</h1>
+                            <h1>¿Quienes somos?</h1>
                         </div>
                         <div class="about-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iusto placeat illo voluptatum explicabo molestias rem minus. Minus, corporis praesentium provident eveniet incidunt nihil dolores dicta error placeat magni mollitia numquam harum accusamus nemo, voluptates quod, quis deserunt iure. Ut?
+                            <p>Somos una empresa, que se dedica a alquileres de corta y larga estancia. Nuestra ventaja es que somos un puente entre los dueños y los clientes: escuchamos ambos partes y así podemos ofrecer los precios mejores para nuestros clientes y los apartamentos que se ajusten a sus necesidades.
                             </p>
-                        </div>
-                        <div class="about-separator"> </div>
-                        <div class="about-content">
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam perferendis quia voluptate velit voluptatibus autem eaque sit soluta voluptates. Magnam culpa sapiente maxime ut sit. Illum explicabo cumque architecto ipsa?
-                            </p>
-                        </div>
-                        
-                    </div>
-                    <div class="about-secondBlock">
-                        <div class="about-header">
-                            <h1>Errores encontrados</h1>
-                        </div>
-                        <div class="about-list">
-                            <h3>Header</h3>
-                                <p>El header era a altura de 0 px, solucioné, pero sin encontrar el porque
-                                </p>
-                            <h3>Circulo en  formularios</h3>
-                                <p>Pusé un circulo decorativo en formularios, pero se ha roto, aunque no he tocado nada 
-                                </p>
-                            <h3>Tengos problemas al implementar header y footer en otras paginas</h3>
-                                <p>En versiones antiguas no aparecieron. Con lo cual, es el problema de estilos</p>
                         </div>
                     </div>
                     <div class="about-signature">
@@ -79,36 +94,81 @@
                         </p>
                     </div>
                 </div>
+                <div class="about-separator">
+                    <div class="about-header">
+                        <h1>Errores encontrados</h1>
+                    </div>
+                    <div class="about-wrapper">                       
+                        <div class="about-secondBlock">
+                            
+                            <div class="about-list">
+                                <h3>Header</h3>
+                                    <p>El header era a altura de 0 px, solucioné, pero sin encontrar el porque
+                                    </p>
+                                <h3>Circulo en  formularios</h3>
+                                    <p>Pusé un circulo decorativo en formularios, pero se ha roto, aunque no he tocado nada 
+                                    </p>
+                                <h3>Tengos problemas al implementar header y footer en otras paginas</h3>
+                                    <p>En versiones antiguas no aparecieron. Con lo cual, es el problema de estilos</p>
+                                <h3>Footer</h3>
+                                    <p>Tuvé que rehacer el footer desde cero. Aun así se comporta en diferentes páginas de forma diferente</p>
+                                <h3>Rehice el logo</h3>
+                                    <p>Eliminé información de navbar, para destacar más el logo</p>
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+               
             </main> 
             <footer>
-                <section class="footer-wrapper">
-                    <section class="footer-social-media">
-                        <h5>Nuestras redes sociales:</h5>
+                <div class="footer__container">
+                    <div class="footer__logo">
+                        <h2>Real Estate</h2>
+                    </div>
+                    <div class="footer__tables">
+                       <div class="footer__title"> 
+                            <h3>
+                                Contactanos:
+                            </h3>
+                            <ul>
+                                <li><a href="tel:+341234567">+341234567</a></li>
+                                <li>example@example.com</li>
+                            </ul>
+                        </div>
+                        <div class="footer__title"> 
+                            <h3>
+                                Contactanos:
+                            </h3>
+                            <ul>
+                                <li><a href="tel:+341234567">+341234567</a></li>
+                                <li>example@example.com</li>
+                            </ul>
+                        </div>
+                        <div class="footer__title"> 
+                            <h3>
+                                Contactanos:
+                            </h3>
+                            <ul>
+                                <li><a href="tel:+341234567">+341234567</a></li>
+                                <li>example@example.com</li>
+                            </ul>
+                        </div>
+                    </div> 
+                    
+                    <div class="footer__copyright">
                         <ul>
-                            <li><img src="../img/icons/gorjeo.png" alt="twitter"><a href="#">Nuestro twitter</a></li>
-                            <li><img src="../img/icons/youtube.png" alt="youtube"><a href="#">Nuestro youtube</a></li>
-                        </ul>
-                    </section>
-                    <section class="footer-social-media">
-                        <h5>Trabaja con nosotros</h5>
-                        <ul>
-                            <li><img src="..//img/icons/whatsapp.png" alt="whatsapp"><a href="#">Nuestro whatsapp</a></li>
+                            <li>Copyright 2024</li>
+                            <li class="footer__logo">
+                                <img src="../img/logo/logo-removebg-preview.png" alt="logo">
+                            </li>
+                            <li>Evgenii Kanyshev </li>
                             
-                        </ul>
-                    </section>
-                    <section class="footer-social-media">
-                        <h5>Contactanos</h5>
-                        <ul>
-                            <li>@: example@example.com</li>
-                            <li> tlf: +341234567</li>
-                        </ul>
-                    </section>
-                </section>
-                <section class="footer-copyright">
-                    Copyright 2023 | All rights reserved | Evgenii Kanyshev
-                </section>
+                        </ul> 
+                    </div>   
+                </div>
             </footer>
-       
     </body>
-
+    <script src="../scripts/open-menu.js"></script>
 </html>

@@ -18,7 +18,7 @@
                     <input required type="text" placeholder="Nombre" pattern="[A-Z]|[a-z]{1,10}">
                 </div>
                 <div class="e-mail">
-                    <input required type="email" placeholder="e-mail@example.com" id="e-mail">
+                    <input required type="email" placeholder="e-mail@example.com" id="e-mail" pattern="[A-Za-z09]+@[A-Za-z]\.(es|uk|ru|[a-z]{2}">
                 </div>
                 <div class="password">
                     <input required type="password" placeholder="Contraseña" pattern="(?=*\d=)(?=.*[A-Z]).{6,}">
@@ -27,13 +27,13 @@
                     <input required type="password" placeholder="Confirmar Contraseña">
                 </div>
 <!---Como recuerdo, php laravel tiene la posibilidad de validación de la contraseña,
-basando en el campo de la contrasela principal
+basando en el campo de la contraseña principal
 Es otras palabras, el primer campo se valida por parte cliente, 
 el segundo - valida que coinciden los campos sin más ---->
                 <div class="sex-selection">
-                    <input type="radio" id="sex-M" name="sex-M" value="Hombre" />
+                    <input type="radio" id="sex-M" name="sex" value="Hombre" />
                     <label for="sex-M">Hombre</label>
-                    <input type="radio" id="sex-F" name="sex-F" value="Mujer"/>
+                    <input type="radio" id="sex-F" name="sex" value="Mujer"/>
                     <label for="sex-F">Mujer</label>
                 </div>
             </div>

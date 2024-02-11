@@ -5,110 +5,155 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-        <title>Página principal</title>
+        <link rel="stylesheet" href="resources/css/fixed.css">
+        <link rel="stylesheet" href="resources/css/header.css">
+        <link rel="stylesheet" href="./resources/css/main-menu.css">
+        <link rel="stylesheet" href="./resources/css/carousel.css">
+        <link rel="stylesheet" href="./resources/css/footer__style.css">
+        
+        <script src="./resources/scripts/open-menu.js"></script>
+        <title>Real Estate | Página principal</title>
         
     </head>
     <body>
    
 
  <!--- Barra de navegación --->
-    <header>
-        <nav class="nav">
-           
-                <a class="navbar-logo" href="index.html">
-                    <img src="./resources/img/logo/logo.jpg" >
-                </a>
-                <ul>
-                    <li>
-                        <a href="index.html">HOME </a>
-                    </li>
-                    <li>
-                        <a href="#">Catálago</a>
-                    </li>
-                    <li>
-                        <a href="./resources/html/about.html">Sobre nosotros</a>
-                    </li>
-                    <li>
-                        <a href="./resources/html/blog.html">Blog</a>
-                    </li>
-                  <!--- buscador interesante, cual posiblemente podría utilizar
-                    <div class="header-buscador">
-                        <form>
-                            <input type="text" name="search" placeholder="Search..">
-                        </form>
-                    </div>
-                    -->
-                    <div class="nav-sesion">
-                        <ul>
-                            <li>
-                                <a href="./resources/html/form.html">Registrarme</a>
-                            </li>
-                            <li>
-                                <a href="./resources/html/login-form.html">Iniciar sesión</a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </ul>
-                
-        </nav>
+    <!---<div class="container"> </div>--->
+        <div class="fixed">
+            <div class="fixed__wrap">
+                <div class="fixed__hamburger" id="fixed__hamburger" onclick="openMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+ 
+
+                <div class="fixed__logo">
+                    <img src="./resources/img/logo/logo-removebg-preview.png" alt="Logo">
+                    <p>Inmobiliaria
+                    </p>
+                </div>
+                <div class="fixed__frase2">
+                    <p>Gran selección de apartamentos<span>Benidorm Alicante</span></p>
+                </div>
+                <li class="fixed__session">
+                    <a class="fixed__link" href="./resources/html/login-form.html">Iniciar sesión</a> 
+                    <a class="fixed__link" href="./resources/html/form.html">Registrarme</a> 
+                </li>
+                <div class="fixed__phone">
+                    <a href="tel:+3412345678">
+                        <img src="./resources/img/icons/fixed__phone.png" alt="icono__telefono">
+                        <span>+3412345678</span>
+                    </a>
+                </div>
+               
+            </div>
         
-    </header>
+        </div>
+
+<!----menu desplegable-->
+        <div class="main-menu main-menu--active">
+            <ul class="main-menu__list ">
+                <li class="main-menu__list-item">
+                    <button class="main-menu__close" onclick="closeMenu()">X Menu</button>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./index.html">Página principal</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./resources/html/catalog.html">Catálogo</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./resources/html/about.html">Sobre nosotros</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="./resources/html/blog.html">Blog</a>
+                </li>
+                <li class="main-menu__item">
+                    <a class="main-menu__phone" href="tel:+34123456">+34123456</a>
+                </li>
+                <li class="main-menu__item main-menu__session">
+                    <a class="main-menu__link" href="../html/login-form.html">Iniciar sesión</a> |
+                    <a class="main-menu__link" href="../html/form.html">Registrarme</a> 
+                </li>
+                
+
+            </ul>
+        </div>
+        <header class="header">
+            <div class="header__wrap">
+                <h1 class="header__title">Maravillosos apartamentos </h1>
+                <h2 class="header__subtitle">Buena seleción con precios competetivos desde 40 euros por noche</h2>
+                <div class="header__button">
+                    <input class="header__checkbutton" type="submit" value="Ver disponibilidad">
+                    <p class="header__leader">
+                        <span>Nos recomiendan</span>
+                        <span>2023</span>
+                    </p>
+                </div>
+            </div>
+            <div class="header__wrap-two">
+                <ul class="header__list advantages">
+                    <li class="advantages__item">
+                        <img class="advantages__icon" src="./resources/img/icons/header__advantage1.png" alt="ventaja-1">
+                        <p class="advantages__text">El precio más bajo que en el mercado</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__icon" src="./resources/img/header__advantage2.png" alt="ventaja-2">
+                        <p class="advantages__text">Rango de apartamentos amplio</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__icon" src="./resources/img/header__advantage3.png" alt="ventaja-3">
+                        <p class="advantages__text">Posibilidad de cancelación*</p>
+                    </li>
+                </ul>
+            </div>
+           
+            
+        </header>
+     
  <!--- Fin barra de navegación ---> 
 
 
     <main>    
-        <section class="video_background">
-                <video class="video_media" autoplay muted loop id="myVideo">
-                    <source src="./resources/img/landscape.mp4" type="video/mp4">
-                </video>
-                
-                
-                <div class="video_content">
-                    <form action="../../form-result.php" method="post" target="_blank">
-                            <h1>
-                                ¿Te apetece una escapada? 
-                            </h1>    
-                            <!----
-                            <h1>
-                                Eliga la ciudad
-                            </h1>
-     el buscador de ciudad, que me parece muy buena idea para a la hora de filtrar los pisos por ciudades, sacando la info de base de datos
-                        <input type="search" name="citysearch" placeholder="Benidorm">
-                        ---->
-                        <div class="header-button">
-                            <input type="submit" value="Ver disponibilidad">
-                        </div>
-                    </form>
-                </div>
-        </section>
+       
 
 <!--- Comienzo Contenido principal ---> 
         <section class="first-block-wrapper">
             <section class="content-wrapper">
                 <div class="content-1">
                     <h3>Disfruta del mar</h3>   
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla natus quod adipisci, magnam explicabo consequatur officia nisi necessitatibus quam dignissimos, veritatis libero facere ad nemo maxime, ea nihil deserunt odio! Obcaecati quo accusamus excepturi sit minima numquam placeat voluptatum quasi totam deleniti, quibusdam, ab illo delectus eaque accusantium, iste corporis veritatis eligendi explicabo. Itaque, in dolorum repellat quaerat temporibus, consectetur sint corrupti porro provident accusantium impedit quisquam excepturi odio ut accusamus placeat nostrum similique eligendi mollitia? Deleniti, veniam. Sequi, eos ipsum! Illum reiciendis ullam quisquam labore provident ab nesciunt dicta. Quas incidunt sunt, cum dolores nostrum quod quo natus molestiae!</p>
-                </div>       
+                    <p>
+                        Nuestros apartamentos están situados en la provincia de Alicante: Benidorm, Altea y Alicante - las ciudades con las playas grandes, bonitas y limpias. 
+                        En Benidorm tenemos servicios adicionales como waterski, alquiler de barcos, paracaidas maritimas y excursiones a L'Illa de Benidorm - una isla cerca de Benidorm.
+                    </p>
+                </div>    
+                <div class="content-button">
+                    <div class="button-1">
+                        <a href="./resources/html/hobby.html" class="button-2">
+                            Ver lugares de interes
+                        </a>
+                    </div>
+                </div>   
             </section>
-            <section class="first-block-feature">
-                <img src="./resources/img/main-page.svg" alt="feature1">
-            </section>
+            
+            
         </section>
-        <section class="content-button">
-            <div class="button-1">
-                <a href="./resources/html/hobby.html" class="button-2">
-                    Reservar
-                </a>
-            </div>
-        </section>
+        
+        
+
+        
 
     <!--- Segundo bloque de contenido --->
         
-        <section class="carousel ">
-            AQUI VA CAROUSEL
-        </section>
+        <div class="carousel__container ">
+            <ul class="carousel__carousel">
+                <li><img src="./resources/img/1.apartment.jpg" alt=""></li>
+                <li><img src="./resources/img/2.apartment.jpg" alt=""></li>
+                <li><img src="./resources/img/1.header-apartment.jpg" alt=""></li>
+            </ul>
+        </div>
         <section class="content-2">
             <div class="separator-text">        
                 <h1>Los recuerdos te esperan!</h1>
@@ -122,58 +167,103 @@
                     </div>
             </section>
         </section>
-        <section class="first-block-wrapper">
-            <section class="first-block-feature">
-                <img src="./resources/img/main-page.svg" alt="feature1">
-            </section>
-            <section class="content-wrapper">
+        <div class="first-block-wrapper">
+            <!--
+                WeatherApi
+            -->
+            <div class="first-block-feature">
+                    <div class="widget">
+                      <div class="details">
+                        <div class="temperature">20°</div>
+                        <div class="summary">
+                          <p class="summaryText">Mostly Cloudy</p>
+                        </div>
+                        <div class="precipitation">Precipitation: 20%</div>
+                        <div class="wind">Wind: 3 mph</div>
+                      </div>
+                      <div class="pictoBackdrop"></div>
+                      <div class="pictoFrame"></div>
+                      <div class="pictoCloudBig"></div>
+                      <div class="pictoCloudFill"></div>
+                      <div class="pictoCloudSmall"></div>
+                      <div class="iconCloudBig"></div>
+                      <div class="iconCloudFill"></div>
+                      <div class="iconCloudSmall"></div>
+                    </div>
+                  </div>
+            <div class="content-wrapper">
                 <div class="content-1">
                     <h3>¿Porque nosotros?</h3>   
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla natus quod adipisci, magnam explicabo consequatur officia nisi necessitatibus quam dignissimos, veritatis libero facere ad nemo maxime, ea nihil deserunt odio! Obcaecati quo accusamus excepturi sit minima numquam placeat voluptatum quasi totam deleniti, quibusdam, ab illo delectus eaque accusantium, iste corporis veritatis eligendi explicabo. Itaque, in dolorum repellat quaerat temporibus, consectetur sint corrupti porro provident accusantium impedit quisquam excepturi odio ut accusamus placeat nostrum similique eligendi mollitia? Deleniti, veniam. Sequi, eos ipsum! Illum reiciendis ullam quisquam labore provident ab nesciunt dicta. Quas incidunt sunt, cum dolores nostrum quod quo natus molestiae!</p>
-                </div>       
-            </section>
-            
-        </section>
-        <section class="content-button">
-            <div class="button-1">
-                <a href="./resources/html/blog.html" class="button-2">
-                    Nuestro blog
-                </a>
+                    <p>Somos una empresa joven, con 2 años de experiencia activa en el sector de hosteleria. 
+                        A lo largo de estos años dejamos satisfechas a más de 2000 personas.
+                        Estamos constantemente en crecimiento profesional y busqueda de nuevos apartamentos.
+
+                    </p>
+                </div>   
+                <div class="content-button">
+                    <div class="button-1">
+                        <a href="./resources/html/blog.html" class="button-2">
+                            Nuestro blog
+                        </a>
+                    </div>
+                </div>    
             </div>
-        </section>
+            
+        </div>
+        <div class="content3__wrapper">
+            <div class="content3__header">
+                <h1>Nos recomiendan nuestros clientes</h1>
+            </div>
+        </div>
+       
             
        
     </main> 
     <footer>
-        <section class="footer-wrapper">
-            <section class="footer-social-media">
-                <h5>Nuestras redes sociales:</h5>
+        <div class="footer__container">
+            <div class="footer__logo">
+                <h2>Real Estate</h2>
+            </div>
+            <div class="footer__tables">
+               <div class="footer__title"> 
+                    <h3>
+                        Contactanos:
+                    </h3>
+                    <ul>
+                        <li><a href="tel:+341234567">+341234567</a></li>
+                        <li>example@example.com</li>
+                    </ul>
+                </div>
+                <div class="footer__title"> 
+                    <h3>
+                        Nuestras redes:
+                    </h3>
+                    <ul class="footer__item">
+                        <li><a href="#"><img src="./resources/img/icons/whatsapp.png" alt="whatsappLogo"></a></li>
+                        <li><a href="#"><img src="./resources/img/icons/youtube.png" alt="youtubeLogo"></a></li>
+                    </ul>
+                </div>
+                <div class="footer__title"> 
+                    <h3>
+                        Trabaja con nosotros:
+                    </h3>
+                    <ul>
+                        <li>example@example.com</li>
+                    </ul>
+                </div>
+            </div> 
+            
+            <div class="footer__copyright">
                 <ul>
-                    <li><img src="./resources/img/icons/gorjeo.png" alt="twitter"><a href="#">Nuestro twitter</a></li>
-                    <li><img src="./resources/img/icons/youtube.png" alt="youtube"><a href="#">Nuestro youtube</a></li>
-                </ul>
-            </section>
-            <section class="footer-social-media">
-                <h5>Trabaja con nosotros</h5>
-                <ul>
-                    <li><img src="./resources/img/icons/whatsapp.png" alt="whatsapp"><a href="#">Nuestro whatsapp</a></li>
+                    <li>Copyright 2024</li>
+                    <li class="footer__logo">
+                        <img src="./resources/img/logo/logo-removebg-preview.png" alt="logo">
+                    </li>
+                    <li>Evgenii Kanyshev </li>
                     
-                </ul>
-            </section>
-            <section class="footer-social-media">
-                <h5>Contactanos</h5>
-                <ul>
-                    <li>@: example@example.com</li>
-                    <li> tlf: +341234567</li>
-                </ul>
-            </section>
-        </section>
-        <section class="footer-copyright">
-            Copyright 2023 | All rights reserved | Evgenii Kanyshev
-        </section>
+                </ul> 
+            </div>   
+        </div>
     </footer>
 </body>
-<!--- Fin contenido ---> 
-<!--- Footer -->
-
 </html>
